@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Pacientes\Expedientes\GeneralController;
 use App\Livewire\Settings\AssignPermissions\AssignPermissionontroller;
 use App\Livewire\Settings\Roles\RoleController;
 use App\Livewire\Settings\Users\UserController;
@@ -19,6 +20,12 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',])
             Route::get('Roles', RoleController::class)->name('Settings.Role');
             Route::get('AssignPermissions', AssignPermissionontroller::class)->name('Settings.AssingPermision');
             Route::get('User', UserController::class)->name('Settings.User');
+        });
+    });
+
+    Route::group(['prefix' => 'Pacientes'], function(){
+        Route::middleware(['role:SuperAdmin|SuperUser|Use|Enfermera|Medico'])->group(function(){
+            Route::get('Expediente', GeneralController::class)->name('Pacientes.Expedientes');
         });
     });
 });

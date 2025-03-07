@@ -33,7 +33,7 @@ return new class extends Migration
             $table->string('town', 100);
             $table->string('municipio', 100);
             $table->string('telefono', 10);
-            $table->enum('vulnerable', ['DISCAPACIDAD', 'INDIGENA', 'ADULTO MAYOR', 'MADRE ASIT. SOCIAL', 'MIGRANTE', ]);
+            $table->enum('vulnerable', ['NINGUNO', 'DISCAPACIDAD', 'INDIGENA', 'ADULTO MAYOR', 'MADRE ASIT. SOCIAL', 'MIGRANTE', ]);
 //            estructura familiar
             $table->integer('vivecasa')->nullable();
             $table->integer('trabajan')->nullable();

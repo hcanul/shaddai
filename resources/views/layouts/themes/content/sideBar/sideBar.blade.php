@@ -10,6 +10,7 @@
                     <span class="ml-3">Dashboard</span>
                 </a>
                     @include('layouts.themes.content.sideBar.menu.settings')
+                    @include('layouts.themes.content.sideBar.menu.pacientes')
         </ul>
     </div>
 </aside>

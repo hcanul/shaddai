@@ -21,7 +21,7 @@
                 <x-input type="email" wire:model='createForm.email' id="createForm.amaterno" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Correo Electronico" />
                 <x-input-error for="createForm.email" />
             </div>
-            <div>
+            {{-- <div>
                 <x-label for="createForm.profile" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Perfil de usuario</x-label>
                 <select wire:model='createForm.profile' id="createForm.profile' id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                     <option value="null" selected>Elija una opcion</option>
@@ -32,7 +32,7 @@
                     @endforelse
                 </select>
                 <x-input-error for="createForm.profile" />
-            </div>
+            </div> --}}
         </div>
     </form>
 </div>
