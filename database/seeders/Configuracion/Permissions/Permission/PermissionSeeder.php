@@ -32,6 +32,11 @@ class PermissionSeeder extends Seeder
         ['name'=>'Ver CrearUsuarios', 'guard_name'=>'web'],
         ['name'=>'Ver EditarUsuarios', 'guard_name'=>'web'],
         ['name'=>'Ver EliminarUsuarios', 'guard_name'=>'web'],
+        //User
+        ['name'=>'Ver CreateNewExpediente', 'guard_name'=>'web'],
+        ['name'=>'Ver EditExpediente', 'guard_name'=>'web'],
+        ['name'=>'Ver DeleteExpediente', 'guard_name'=>'web'],
+        ['name'=>'Ver ViewExpediente', 'guard_name'=>'web'],
     ];
     public function run(): void
     {

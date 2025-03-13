@@ -9,8 +9,12 @@
                     @include('layouts.themes.icons.dashboard')
                     <span class="ml-3">Dashboard</span>
                 </a>
-                    @include('layouts.themes.content.sideBar.menu.settings')
-                    @include('layouts.themes.content.sideBar.menu.pacientes')
+                    @role('SuperAdmin|SuperUser')
+                        @include('layouts.themes.content.sideBar.menu.settings')
+                    @endrole
+                    @role('SuperAdmin|SuperUser|Registro')
+                        @include('layouts.themes.content.sideBar.menu.pacientes')
+                    @endrole
         </ul>
     </div>
 </aside>

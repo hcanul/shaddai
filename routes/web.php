@@ -24,7 +24,7 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',])
     });
 
     Route::group(['prefix' => 'Pacientes'], function(){
-        Route::middleware(['role:SuperAdmin|SuperUser|Use|Enfermera|Medico'])->group(function(){
+        Route::middleware(['role:SuperAdmin|SuperUser|Registro|Enfermera|Medico'])->group(function(){
             Route::get('Expediente', GeneralController::class)->name('Pacientes.Expedientes');
         });
     });

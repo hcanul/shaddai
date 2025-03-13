@@ -592,21 +592,104 @@
                 <x-input type="number" wire:model='createForm.imc' id="createForm.imc" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                 <x-input-error for="createForm.imc" />
             </div>
+        </div>
+        <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800" id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
+                <li class="me-2">
+                    <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true" class="inline-block p-4 text-blue-600 rounded-ss-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">Nutricion</button>
+                </li>
+            </ul>
+        </div>
+        <div class="grid grid-cols-4 gap-2 pl-6 sm:grid-cols-4">
             <div>
-                <x-label for="createForm.observaciones" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Observaciones</x-label>
-                <textarea wire:model='createForm.observaciones' id="createForm.observaciones" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
-                <x-input-error for="createForm.observaciones" />
+                <x-label for="createForm.observacionesn" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Observaciones</x-label>
+                <textarea wire:model='createForm.observacionesn' id="createForm.observacionesn" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="createForm.observacionesn" />
             </div>
             <div>
-                <x-label for="createForm.tx" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">TX</x-label>
-                <textarea wire:model='createForm.tx' id="createForm.tx" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
-                <x-input-error for="createForm.tx" />
+                <x-label for="createForm.txn" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">TX</x-label>
+                <textarea wire:model='createForm.txn' id="createForm.txn" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="createForm.txn" />
             </div>
             <div>
-                <x-label for="createForm.dx" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">DX</x-label>
-                <textarea wire:model='createForm.dx' id="createForm.dx" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
-                <x-input-error for="createForm.dx" />
+                <x-label for="createForm.dxn" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">DX</x-label>
+                <textarea wire:model='createForm.dxn' id="createForm.dx" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="createForm.dxn" />
             </div>
+        </div>
+        <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800" id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
+                <li class="me-2">
+                    <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true" class="inline-block p-4 text-blue-600 rounded-ss-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">Medicina General</button>
+                </li>
+            </ul>
+        </div>
+        <div class="grid grid-cols-4 gap-2 pl-6 sm:grid-cols-4">
+            <div>
+                <x-label for="createForm.observacionesmg" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Observaciones</x-label>
+                <textarea wire:model='createForm.observacionesmg' id="createForm.observacionesmg" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="createForm.observacionesmg" />
+            </div>
+            <div>
+                <x-label for="createForm.txmg" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">TX</x-label>
+                <textarea wire:model='createForm.txmg' id="createForm.txmg" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="createForm.txmg" />
+            </div>
+            <div>
+                <x-label for="createForm.dxmg" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">DX</x-label>
+                <textarea wire:model='createForm.dxmg' id="createForm.dx" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="createForm.dxmg" />
+            </div>
+        </div>
+        <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800" id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
+                <li class="me-2">
+                    <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true" class="inline-block p-4 text-blue-600 rounded-ss-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">Fisioterapia</button>
+                </li>
+            </ul>
+        </div>
+        <div class="grid grid-cols-4 gap-2 pl-6 sm:grid-cols-4">
+            <div>
+                <x-label for="createForm.observacionesft" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Observaciones</x-label>
+                <textarea wire:model='createForm.observacionesft' id="createForm.observacionesft" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="createForm.observacionesft" />
+            </div>
+            <div>
+                <x-label for="createForm.txft" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">TX</x-label>
+                <textarea wire:model='createForm.txft' id="createForm.txft" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="createForm.txft" />
+            </div>
+            <div>
+                <x-label for="createForm.dxft" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">DX</x-label>
+                <textarea wire:model='createForm.dxft' id="createForm.dxft" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="createForm.dxft" />
+            </div>
+        </div>
+        <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800" id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
+                <li class="me-2">
+                    <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true" class="inline-block p-4 text-blue-600 rounded-ss-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">Odontologia</button>
+                </li>
+            </ul>
+        </div>
+        <div class="grid grid-cols-4 gap-2 pl-6 sm:grid-cols-4">
+            <div>
+                <x-label for="createForm.observacionesod" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Observaciones</x-label>
+                <textarea wire:model='createForm.observacionesod' id="createForm.observacionesod" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="createForm.observacionesod" />
+            </div>
+            <div>
+                <x-label for="createForm.txod" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">TX</x-label>
+                <textarea wire:model='createForm.txod' id="createForm.txod" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="createForm.txod" />
+            </div>
+            <div>
+                <x-label for="createForm.dxod" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">DX</x-label>
+                <textarea wire:model='createForm.dxod' id="createForm.dx" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="createForm.dxod" />
+            </div>
+        </div>
+        <div class="grid grid-cols-4 gap-2 pl-6 sm:grid-cols-4">
             <div>
                 <x-label for="createForm.permitiooracion" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Permimtio oración?</x-label>
                 <select wire:model='createForm.permitiooracion' id="createForm.permitiooracion"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">

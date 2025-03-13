@@ -592,21 +592,104 @@
                 <x-input type="number" wire:model='editForm.imc' id="editForm.imc" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                 <x-input-error for="editForm.imc" />
             </div>
+        </div>
+        <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800" id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
+                <li class="me-2">
+                    <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true" class="inline-block p-4 text-blue-600 rounded-ss-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">Nutricion</button>
+                </li>
+            </ul>
+        </div>
+        <div class="grid grid-cols-4 gap-2 pl-6 sm:grid-cols-4">
             <div>
-                <x-label for="editForm.observaciones" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Observaciones</x-label>
-                <textarea wire:model='editForm.observaciones' id="editForm.observaciones" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
-                <x-input-error for="editForm.observaciones" />
+                <x-label for="editForm.observacionesn" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Observaciones</x-label>
+                <textarea wire:model='editForm.observacionesn' id="editForm.observacionesn" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="editForm.observacionesn" />
             </div>
             <div>
-                <x-label for="editForm.tx" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">TX</x-label>
-                <textarea wire:model='editForm.tx' id="editForm.tx" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
-                <x-input-error for="editForm.tx" />
+                <x-label for="editForm.txn" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">TX</x-label>
+                <textarea wire:model='editForm.txn' id="editForm.txn" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="editForm.txn" />
             </div>
             <div>
-                <x-label for="editForm.dx" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">DX</x-label>
-                <textarea wire:model='editForm.dx' id="editForm.dx" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
-                <x-input-error for="editForm.dx" />
+                <x-label for="editForm.dxn" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">DX</x-label>
+                <textarea wire:model='editForm.dxn' id="editForm.dx" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="editForm.dxn" />
             </div>
+        </div>
+        <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800" id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
+                <li class="me-2">
+                    <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true" class="inline-block p-4 text-blue-600 rounded-ss-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">Medicina General</button>
+                </li>
+            </ul>
+        </div>
+        <div class="grid grid-cols-4 gap-2 pl-6 sm:grid-cols-4">
+            <div>
+                <x-label for="editForm.observacionesmg" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Observaciones</x-label>
+                <textarea wire:model='editForm.observacionesmg' id="editForm.observacionesmg" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="editForm.observacionesmg" />
+            </div>
+            <div>
+                <x-label for="editForm.txmg" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">TX</x-label>
+                <textarea wire:model='editForm.txmg' id="editForm.txmg" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="editForm.txmg" />
+            </div>
+            <div>
+                <x-label for="editForm.dxmg" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">DX</x-label>
+                <textarea wire:model='editForm.dxmg' id="editForm.dx" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="editForm.dxmg" />
+            </div>
+        </div>
+        <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800" id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
+                <li class="me-2">
+                    <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true" class="inline-block p-4 text-blue-600 rounded-ss-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">Fisioterapia</button>
+                </li>
+            </ul>
+        </div>
+        <div class="grid grid-cols-4 gap-2 pl-6 sm:grid-cols-4">
+            <div>
+                <x-label for="editForm.observacionesft" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Observaciones</x-label>
+                <textarea wire:model='editForm.observacionesft' id="editForm.observacionesft" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="editForm.observacionesft" />
+            </div>
+            <div>
+                <x-label for="editForm.txft" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">TX</x-label>
+                <textarea wire:model='editForm.txft' id="editForm.txft" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="editForm.txft" />
+            </div>
+            <div>
+                <x-label for="editForm.dxft" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">DX</x-label>
+                <textarea wire:model='editForm.dxft' id="editForm.dxft" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="editForm.dxft" />
+            </div>
+        </div>
+        <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800" id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
+                <li class="me-2">
+                    <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true" class="inline-block p-4 text-blue-600 rounded-ss-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">Odontologia</button>
+                </li>
+            </ul>
+        </div>
+        <div class="grid grid-cols-4 gap-2 pl-6 sm:grid-cols-4">
+            <div>
+                <x-label for="editForm.observacionesod" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Observaciones</x-label>
+                <textarea wire:model='editForm.observacionesod' id="editForm.observacionesod" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="editForm.observacionesod" />
+            </div>
+            <div>
+                <x-label for="editForm.txod" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">TX</x-label>
+                <textarea wire:model='editForm.txod' id="editForm.txod" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="editForm.txod" />
+            </div>
+            <div>
+                <x-label for="editForm.dxod" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">DX</x-label>
+                <textarea wire:model='editForm.dxod' id="editForm.dx" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+                <x-input-error for="editForm.dxod" />
+            </div>
+        </div>
+        <div class="grid grid-cols-4 gap-2 pl-6 sm:grid-cols-4">
             <div>
                 <x-label for="editForm.permitiooracion" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Permimtio oración?</x-label>
                 <select wire:model='editForm.permitiooracion' id="editForm.permitiooracion"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">

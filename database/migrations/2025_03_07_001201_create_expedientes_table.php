@@ -43,6 +43,7 @@ return new class extends Migration
             $table->integer('depeneconomicos')->nullable();
             $table->enum('segsoci', ['NINGUNO', 'ISSTE', 'IMSS', 'INSABI'])->nullable();
             $table->enum('apoyogob', [
+                'NINGUNO',
                 'Programas de bienestar',
                 'Programa para el Bienestar de las Personas Adultas Mayores',
                 'Programa Pensión para el Bienestar de las Personas con Discapacidad',
@@ -104,9 +105,22 @@ return new class extends Migration
             $table->integer('so2')->nullable();
             $table->string('ta', 100)->nullable();
             $table->float('imc')->nullable();
-            $table->text('observaciones')->nullable();
-            $table->text('tx')->nullable();
-            $table->text('dx')->nullable();
+            // Nutricion
+            $table->text('observacionesn')->nullable();
+            $table->text('txn')->nullable();
+            $table->text('dxn')->nullable();
+            //MedicinaGeneral
+            $table->text('observacionesmg')->nullable();
+            $table->text('txmg')->nullable();
+            $table->text('dxmg')->nullable();
+            //Fisioterapia
+            $table->text('observacionesft')->nullable();
+            $table->text('txft')->nullable();
+            $table->text('dxft')->nullable();
+            //Odontologia
+            $table->text('observacionesod')->nullable();
+            $table->text('txod')->nullable();
+            $table->text('dxod')->nullable();
 //            Situacion espiritua
             $table->enum('permitiooracion', ['SI', 'NO'])->nullable();
             $table->enum('interesoracion', ['SI', 'NO'])->nullable();
