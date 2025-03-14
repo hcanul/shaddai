@@ -8,6 +8,3 @@ COPY . .
 RUN composer install --no-dev --optimize-autoloader
 RUN chown -R www-data:www-data /var/www
 
-# Dockerfile para Nginx (ubicado en ./nginx/Dockerfile)
-FROM nginx:alpine
-COPY nginx/default.conf /etc/nginx/conf.d/default.conf
