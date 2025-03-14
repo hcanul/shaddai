@@ -7,6 +7,5 @@ RUN apt-get update && apt-get install -y \
 COPY composer.json composer.lock ./
 RUN composer install --no-dev --optimize-autoloader
 COPY . .
-RUN composer install --no-dev --optimize-autoloader
 RUN npm install && npm run build
 RUN chown -R www-data:www-data /var/www
