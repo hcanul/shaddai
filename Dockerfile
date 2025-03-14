@@ -10,4 +10,4 @@ RUN chown -R www-data:www-data /var/www
 
 # Dockerfile para Nginx (ubicado en ./nginx/Dockerfile)
 FROM nginx:alpine
-COPY default.conf /etc/nginx/conf.d/default.conf
+COPY nginx/default.conf /etc/nginx/conf.d/default.conf
