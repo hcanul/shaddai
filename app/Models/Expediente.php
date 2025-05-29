@@ -66,4 +66,9 @@ class Expediente extends Model
             }
         );
     }
+
+    public function medications()
+    {
+        return $this->hasMany(\App\Models\Medication::class, 'patient_id');
+    }
 }

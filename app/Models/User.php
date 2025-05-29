@@ -69,6 +69,11 @@ class User extends Authenticatable
         ];
     }
 
+    public function medications()
+    {
+        return $this->hasMany(\App\Models\Medication::class, 'doctor_id');
+    }
+
     protected function name(): Attribute
     {
         return Attribute::make(

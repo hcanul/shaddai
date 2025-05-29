@@ -16,26 +16,47 @@ class RoleSeeder extends Seeder
     public function run(): void
     {
         // Crear roles
-        $superAdmin = Role::create(['name' => 'SuperAdmin']);
-        $superUser = Role::create(['name' => 'SuperUser']);
-        $user = Role::create(['name'=>'Registro']);
+        $superAdmin = Role::firstOrCreate(['name' => 'SuperAdmin']);
+        $superUser = Role::firstOrCreate(['name' => 'SuperUser']);
+        $user = Role::firstOrCreate(['name'=>'Registro']);
+        $medicoRole = Role::firstOrCreate(['name' => 'Medico']);
+        $enfermeraRole = Role::firstOrCreate(['name' => 'Enfermera']);
 
         //Asigno todos los permisos al Rol
         $superAdmin->givePermissionTo(Permission::all());
         $superUser->givePermissionTo(Permission::all());
         $user->givePermissionTo(['Ver CreateNewExpediente', 'Ver EditExpediente', 'Ver DeleteExpediente', 'Ver ViewExpediente']);
 
+        // Asignar permisos de medicamentos
+        $medicationPermissions = ['view medications', 'create medications', 'edit medications', 'delete medications'];
+        $superAdmin->givePermissionTo($medicationPermissions);
+        $medicoRole->givePermissionTo($medicationPermissions);
+        $enfermeraRole->givePermissionTo(['view medications', 'create medications', 'edit medications']);
+
         // Obtener el usuario
-        $user = User::whereProfile('SuperAdmin')->get()[0];
-        $user2 = User::whereProfile('SuperUser')->get()[0];
+        $user = User::whereProfile('SuperAdmin')->first();
+        if ($user) {
+            $user->assignRole('SuperAdmin');
+        }
+
+        $user2 = User::whereProfile('SuperUser')->first();
+        if ($user2) {
+            $user2->assignRole('SuperUser');
+        }
+        
         $user3 = User::whereProfile('Registro')->get();
-
-        // Asignarle un rol
-        $user->assignRole('SuperAdmin');
-        $user2->assignRole('SuperUser');
-
         foreach ($user3 as $usuario) {
             $usuario->assignRole('Registro');
         }
+
+        // Example of assigning Medico and Enfermera roles to existing users if needed
+        // $medicoUser = User::whereEmail('medico@example.com')->first();
+        // if ($medicoUser) {
+        //     $medicoUser->assignRole('Medico');
+        // }
+        // $enfermeraUser = User::whereEmail('enfermera@example.com')->first();
+        // if ($enfermeraUser) {
+        //     $enfermeraUser->assignRole('Enfermera');
+        // }
     }
 }
