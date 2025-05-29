@@ -4,6 +4,7 @@ use App\Livewire\Pacientes\Expedientes\GeneralController;
 use App\Livewire\Settings\AssignPermissions\AssignPermissionontroller;
 use App\Livewire\Settings\Roles\RoleController;
 use App\Livewire\Settings\Users\UserController;
+use App\Livewire\Storage\MedicationController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -27,5 +28,9 @@ Route::middleware(['auth:sanctum',config('jetstream.auth_session'),'verified',])
         Route::middleware(['role:SuperAdmin|SuperUser|Registro|Enfermera|Medico'])->group(function(){
             Route::get('Expediente', GeneralController::class)->name('Pacientes.Expedientes');
         });
+    });
+
+    Route::group(['prefix' => 'Storage', 'middleware' => ['role:SuperAdmin|SuperUser|Medico|Enfermera']], function () {
+        Route::get('Medications', MedicationController::class)->name('storage.medications');
     });
 });
