@@ -37,11 +37,17 @@ class PermissionSeeder extends Seeder
         ['name'=>'Ver EditExpediente', 'guard_name'=>'web'],
         ['name'=>'Ver DeleteExpediente', 'guard_name'=>'web'],
         ['name'=>'Ver ViewExpediente', 'guard_name'=>'web'],
+
+        //todo:Medications
+        ['name'=>'view medications', 'guard_name'=>'web'],
+        ['name'=>'create medications', 'guard_name'=>'web'],
+        ['name'=>'edit medications', 'guard_name'=>'web'],
+        ['name'=>'delete medications', 'guard_name'=>'web'],
     ];
     public function run(): void
     {
         foreach ($this->permisos as $value) {
-            Permission::create(['name' => $value['name'], 'guard_name' => $value['guard_name']]);
+            Permission::firstOrCreate(['name' => $value['name']], ['guard_name' => $value['guard_name']]);
         }
     }
 }
