@@ -593,9 +593,9 @@
                 <x-input-error for="editForm.imc" />
             </div>
             <div>
-                <x-label for="editForm.dx-tx" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">DX--TX</x-label>
-                <x-input type="number" wire:model='editForm.dx-tx' id="editForm.dx-tx" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="editForm.dx-tx" />
+                <x-label for="editForm.dxtx" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">DX--TX</x-label>
+                <x-input type="number" wire:model='editForm.dxtx' id="editForm.dxtx" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                <x-input-error for="editForm.dxtx" />
             </div>
         </div>
         <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

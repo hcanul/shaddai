@@ -105,7 +105,7 @@ return new class extends Migration
             $table->integer('so2')->nullable();
             $table->string('ta', 100)->nullable();
             $table->float('imc')->nullable();
-            $table->integer('dx-tx')->nullable();
+            $table->integer('dxtx')->nullable();
             // Nutricion
             $table->text('observacionesn')->nullable();
             $table->text('txn')->nullable();
