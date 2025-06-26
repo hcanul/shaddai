@@ -558,14 +558,14 @@
                 <x-input-error for="editForm.talla" />
             </div>
             <div>
-                <x-label for="editForm.fr" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">FC</x-label>
-                <x-input type="number" wire:model='editForm.fr' id="editForm.fr" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="editForm.fr" />
+                <x-label for="editForm.fc" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">FC</x-label>
+                <x-input type="number" wire:model='editForm.fc' id="editForm.fc" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                <x-input-error for="editForm.fc" />
             </div>
             <div>
-                <x-label for="editForm.talla" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">FR</x-label>
-                <x-input type="number" wire:model='editForm.talla' id="editForm.talla" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="editForm.talla" />
+                <x-label for="editForm.fr" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">FR</x-label>
+                <x-input type="number" wire:model='editForm.fr' id="editForm.fr" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                <x-input-error for="editForm.fr" />
             </div>
             <div>
                 <x-label for="editForm.temp" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Temperatura</x-label>
@@ -591,6 +591,11 @@
                 <x-label for="editForm.imc" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">IMC</x-label>
                 <x-input type="number" wire:model='editForm.imc' id="editForm.imc" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                 <x-input-error for="editForm.imc" />
+            </div>
+            <div>
+                <x-label for="editForm.dx-tx" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">DX--TX</x-label>
+                <x-input type="number" wire:model='editForm.dx-tx' id="editForm.dx-tx" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                <x-input-error for="editForm.dx-tx" />
             </div>
         </div>
         <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
