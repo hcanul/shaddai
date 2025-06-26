@@ -43,6 +43,13 @@ class PermissionSeeder extends Seeder
         ['name'=>'create medications', 'guard_name'=>'web'],
         ['name'=>'edit medications', 'guard_name'=>'web'],
         ['name'=>'delete medications', 'guard_name'=>'web'],
+
+        //Todo:Colaboradores
+        ['name'=>'Ver Colaboradores', 'guard_name'=>'web'],
+        ['name'=>'Ver ListaColaboradores', 'guard_name'=>'web'],
+        ['name'=>'Ver CrearColaboradores', 'guard_name'=>'web'],
+        ['name'=>'Ver EditarColaboradores', 'guard_name'=>'web'],
+        ['name'=>'Ver EliminarColaboradores', 'guard_name'=>'web'],
     ];
     public function run(): void
     {

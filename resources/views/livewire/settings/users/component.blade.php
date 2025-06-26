@@ -24,8 +24,8 @@
             :headers="$headers"
             :rows="$rows"
             :displayColumns="$displayColumns"
-            editPermission="edit users"
-            deletePermission="delete users"
+            editPermission="Ver EditarColaboradores"
+            deletePermission="Ver EliminarColaboradores"
         />
     </div>
     <div>

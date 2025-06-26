@@ -558,14 +558,14 @@
                 <x-input-error for="createForm.talla" />
             </div>
             <div>
-                <x-label for="createForm.fr" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">FC</x-label>
-                <x-input type="number" wire:model='createForm.fr' id="createForm.fr" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="createForm.fr" />
+                <x-label for="createForm.fc" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">FC</x-label>
+                <x-input type="number" wire:model='createForm.fc' id="createForm.fc" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                <x-input-error for="createForm.fc" />
             </div>
             <div>
-                <x-label for="createForm.talla" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">FR</x-label>
-                <x-input type="number" wire:model='createForm.talla' id="createForm.talla" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="createForm.talla" />
+                <x-label for="createForm.fr" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">FR</x-label>
+                <x-input type="number" wire:model='createForm.fr' id="createForm.fr" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                <x-input-error for="createForm.fr" />
             </div>
             <div>
                 <x-label for="createForm.temp" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Temperatura</x-label>
@@ -591,6 +591,11 @@
                 <x-label for="createForm.imc" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">IMC</x-label>
                 <x-input type="number" wire:model='createForm.imc' id="createForm.imc" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                 <x-input-error for="createForm.imc" />
+            </div>
+            <div>
+                <x-label for="createForm.dx-tx" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">DX--TX</x-label>
+                <x-input type="number" wire:model='createForm.dx-tx' id="createForm.dx-tx" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                <x-input-error for="createForm.dx-tx" />
             </div>
         </div>
         <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
