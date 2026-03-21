@@ -27,6 +27,8 @@ class CreateExpedienteForm extends Form
     public $fnacimiento;
 
     #[Validate('required', as:'C. U. R. P.')]
+    #[Validate('size:18', as:'C. U. R. P.')]
+    #[Validate('regex:/^([A-Z][AEIOUX][A-Z]{2}\\d{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[12]\\d|3[01])[HM](?:AS|B[CS]|C[CLMSH]|D[FG]|G[TR]|HG|JC|M[CNS]|N[ETL]|OC|PL|Q[TR]|S[PLR]|T[CSL]|VZ|YN|ZS)[B-DF-HJ-NP-TV-Z]{3}[A-Z\\d])(\\d)$/', as:'C. U. R. P.')]
     #[Validate('unique:expedientes,curp', as:'C. U. R. P.')]
     public $curp;
 
@@ -150,47 +152,18 @@ class CreateExpedienteForm extends Form
 
     public $deportes;
 
-    public $peso;
-
-    public $talla;
-
-    public $fc;
-
-    public $fr;
-
-    public $temp;
-
-    public $ca;
-
-    public $so2;
-
-    public $ta;
-
-    public $imc;
-
     public $observaciones;
 
-    public $tx;
-
-    public $dx;
-
-    public $permitiooracion;
-
-    public $interesoracion;
-
-    public $espcialidadintesada;
-
-    public $observaciones2;
 
     public function resetUI()
     {
         $this->resetValidation();
-        $this->reset(['name', 'apaterno', 'amaterno', 'edad', 'sexo', 'fnacimiento', 'curp', 'nacionalidad', 'ecivil', 'estudios', 'ocupacion', 'religion', 'street', 'number', 'cp', 'colony', 'town', 'municipio', 'telefono', 'vulnerable', 'vivecasa', 'trabajan', 'estudian', 'trabajaactual', 'depeneconomicos', 'segsoci', 'apoyogob', 'tuberculosis', 'dm', 'hta', 'enfneoplasticas', 'cardiopatia', 'hepatopatias', 'nefropatias', 'enfendocrinas', 'enfmentales', 'asma', 'enfhematologicas', 'enfinfeccinfanc', 'tb', 'enfvenereas', 'fiebre', 'tifoidea', 'salmonelosis', 'neumonias', 'paludismo', 'parasitosis', 'enfalergicas', 'intervenciones', 'qx', 'hospitalizacion', 'traumatismos', 'perdiconocimiento', 'transfusiones', 'intolmedicamentos', 'tiposangre', 'alergias', 'banio', 'lavdientes', 'tabaquismos', 'alcoholismo', 'toxicomanias', 'deportes', 'peso', 'talla', 'fc', 'fr', 'temp', 'ca', 'so2', 'ta', 'imc', 'observaciones', 'tx', 'dx', 'permitiooracion', 'interesoracion', 'espcialidadintesada', 'observaciones2']);
+        $this->reset(['name', 'apaterno', 'amaterno', 'edad', 'sexo', 'fnacimiento', 'curp', 'nacionalidad', 'ecivil', 'estudios', 'ocupacion', 'religion', 'street', 'number', 'cp', 'colony', 'town', 'municipio', 'telefono', 'vulnerable', 'vivecasa', 'trabajan', 'estudian', 'trabajaactual', 'depeneconomicos', 'segsoci', 'apoyogob', 'tuberculosis', 'dm', 'hta', 'enfneoplasticas', 'cardiopatia', 'hepatopatias', 'nefropatias', 'enfendocrinas', 'enfmentales', 'asma', 'enfhematologicas', 'enfinfeccinfanc', 'tb', 'enfvenereas', 'fiebre', 'tifoidea', 'salmonelosis', 'neumonias', 'paludismo', 'parasitosis', 'enfalergicas', 'intervenciones', 'qx', 'hospitalizacion', 'traumatismos', 'perdiconocimiento', 'transfusiones', 'intolmedicamentos', 'tiposangre', 'alergias', 'banio', 'lavdientes', 'tabaquismos', 'alcoholismo', 'toxicomanias', 'deportes', 'observaciones']);
     }
 
     public function Save()
     {
         $this->validate();
-        Expediente::create($this->only(['name', 'apaterno', 'amaterno', 'edad', 'sexo', 'fnacimiento', 'curp', 'nacionalidad', 'ecivil', 'estudios', 'ocupacion', 'religion', 'street', 'number', 'cp', 'colony', 'town', 'municipio', 'telefono', 'vulnerable', 'vivecasa', 'trabajan', 'estudian', 'trabajaactual', 'depeneconomicos', 'segsoci', 'apoyogob', 'tuberculosis', 'dm', 'hta', 'enfneoplasticas', 'cardiopatia', 'hepatopatias', 'nefropatias', 'enfendocrinas', 'enfmentales', 'asma', 'enfhematologicas', 'enfinfeccinfanc', 'tb', 'enfvenereas', 'fiebre', 'tifoidea', 'salmonelosis', 'neumonias', 'paludismo', 'parasitosis', 'enfalergicas', 'intervenciones', 'qx', 'hospitalizacion', 'traumatismos', 'perdiconocimiento', 'transfusiones', 'intolmedicamentos', 'tiposangre', 'alergias', 'banio', 'lavdientes', 'tabaquismos', 'alcoholismo', 'toxicomanias', 'deportes', 'peso', 'talla', 'fc', 'fr', 'temp', 'ca', 'so2', 'ta', 'imc', 'observaciones', 'tx', 'dx', 'permitiooracion', 'interesoracion', 'espcialidadintesada', 'observaciones2']));
+        Expediente::create($this->only(['name', 'apaterno', 'amaterno', 'edad', 'sexo', 'fnacimiento', 'curp', 'nacionalidad', 'ecivil', 'estudios', 'ocupacion', 'religion', 'street', 'number', 'cp', 'colony', 'town', 'municipio', 'telefono', 'vulnerable', 'vivecasa', 'trabajan', 'estudian', 'trabajaactual', 'depeneconomicos', 'segsoci', 'apoyogob', 'tuberculosis', 'dm', 'hta', 'enfneoplasticas', 'cardiopatia', 'hepatopatias', 'nefropatias', 'enfendocrinas', 'enfmentales', 'asma', 'enfhematologicas', 'enfinfeccinfanc', 'tb', 'enfvenereas', 'fiebre', 'tifoidea', 'salmonelosis', 'neumonias', 'paludismo', 'parasitosis', 'enfalergicas', 'intervenciones', 'qx', 'hospitalizacion', 'traumatismos', 'perdiconocimiento', 'transfusiones', 'intolmedicamentos', 'tiposangre', 'alergias', 'banio', 'lavdientes', 'tabaquismos', 'alcoholismo', 'toxicomanias', 'deportes', 'observaciones']));
     }
 }

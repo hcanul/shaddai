@@ -32,7 +32,26 @@ class PermissionSeeder extends Seeder
         ['name'=>'Ver CrearUsuarios', 'guard_name'=>'web'],
         ['name'=>'Ver EditarUsuarios', 'guard_name'=>'web'],
         ['name'=>'Ver EliminarUsuarios', 'guard_name'=>'web'],
+        //User
+        ['name'=>'Ver CreateNewExpediente', 'guard_name'=>'web'],
+        ['name'=>'Ver EditExpediente', 'guard_name'=>'web'],
+        ['name'=>'Ver DeleteExpediente', 'guard_name'=>'web'],
+        ['name'=>'Ver ViewExpediente', 'guard_name'=>'web'],
+
+        //todo:Medications
+        ['name'=>'view medications', 'guard_name'=>'web'],
+        ['name'=>'create medications', 'guard_name'=>'web'],
+        ['name'=>'edit medications', 'guard_name'=>'web'],
+        ['name'=>'delete medications', 'guard_name'=>'web'],
+
+        //Todo:Colaboradores
+        ['name'=>'Ver Colaboradores', 'guard_name'=>'web'],
+        ['name'=>'Ver ListaColaboradores', 'guard_name'=>'web'],
+        ['name'=>'Ver CrearColaboradores', 'guard_name'=>'web'],
+        ['name'=>'Ver EditarColaboradores', 'guard_name'=>'web'],
+        ['name'=>'Ver EliminarColaboradores', 'guard_name'=>'web'],
     ];
+
     public function run(): void
     {
         foreach ($this->permisos as $value) {

@@ -18,6 +18,8 @@
         "vite": "^6.0.11"
     },
     "dependencies": {
+        "baseline-browser-mapping": "^2.9.19",
+        "caniuse-lite": "^1.0.30001766",
         "sweetalert2": "^11.17.2"
     }
 }

@@ -539,105 +539,11 @@
                 <x-input-error for="editForm.deportes" />
             </div>
         </div>
-        <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800" id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
-                <li class="me-2">
-                    <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true" class="inline-block p-4 text-blue-600 rounded-ss-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">IV.- NOTE DE EVOLUCIÓN</button>
-                </li>
-            </ul>
-        </div>
-        <div class="grid grid-cols-4 gap-2 pl-6 sm:grid-cols-4">
-            <div>
-                <x-label for="editForm.peso" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Peso</x-label>
-                <x-input type="number" wire:model='editForm.peso' id="editForm.peso" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="editForm.peso" />
-            </div>
-            <div>
-                <x-label for="editForm.talla" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Talla</x-label>
-                <x-input type="number" wire:model='editForm.talla' id="editForm.talla" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="editForm.talla" />
-            </div>
-            <div>
-                <x-label for="editForm.fr" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">FC</x-label>
-                <x-input type="number" wire:model='editForm.fr' id="editForm.fr" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="editForm.fr" />
-            </div>
-            <div>
-                <x-label for="editForm.talla" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">FR</x-label>
-                <x-input type="number" wire:model='editForm.talla' id="editForm.talla" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="editForm.talla" />
-            </div>
-            <div>
-                <x-label for="editForm.temp" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Temperatura</x-label>
-                <x-input type="number" wire:model='editForm.temp' id="editForm.temp" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="editForm.temp" />
-            </div>
-            <div>
-                <x-label for="editForm.ca" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">CA</x-label>
-                <x-input type="number" wire:model='editForm.ca' id="editForm.ca" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="editForm.ca" />
-            </div>
-            <div>
-                <x-label for="editForm.so2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">SO2</x-label>
-                <x-input type="number" wire:model='editForm.so2' id="editForm.so2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="editForm.so2" />
-            </div>
-            <div>
-                <x-label for="editForm.ta" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">TA</x-label>
-                <x-input type="text" wire:model='editForm.ta' id="editForm.ta" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="editForm.ta" />
-            </div>
-            <div>
-                <x-label for="editForm.imc" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">IMC</x-label>
-                <x-input type="number" wire:model='editForm.imc' id="editForm.imc" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="editForm.imc" />
-            </div>
+        <div class="grid grid-cols-1 gap-2 pl-6 sm:grid-cols-1">
             <div>
                 <x-label for="editForm.observaciones" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Observaciones</x-label>
                 <textarea wire:model='editForm.observaciones' id="editForm.observaciones" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
                 <x-input-error for="editForm.observaciones" />
-            </div>
-            <div>
-                <x-label for="editForm.tx" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">TX</x-label>
-                <textarea wire:model='editForm.tx' id="editForm.tx" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
-                <x-input-error for="editForm.tx" />
-            </div>
-            <div>
-                <x-label for="editForm.dx" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">DX</x-label>
-                <textarea wire:model='editForm.dx' id="editForm.dx" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
-                <x-input-error for="editForm.dx" />
-            </div>
-            <div>
-                <x-label for="editForm.permitiooracion" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Permimtio oración?</x-label>
-                <select wire:model='editForm.permitiooracion' id="editForm.permitiooracion"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                    <option value="null" >Elija una opcion</option>
-                    <option value="SI" >SI</option>
-                    <option value="NO" >NO</option>
-                </select>
-                <x-input-error for="editForm.permitiooracion" />
-            </div>
-            <div>
-                <x-label for="editForm.interesoracion" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mostro interes en visita o lista oracion?</x-label>
-                <select wire:model='editForm.interesoracion' id="editForm.interesoracion"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                    <option value="null" >Elija una opcion</option>
-                    <option value="SI" >SI</option>
-                    <option value="NO" >NO</option>
-                </select>
-                <x-input-error for="editForm.interesoracion" />
-            </div>
-            <div>
-                <x-label for="editForm.espcialidadintesada" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Especialidad por la que mostro mayor interes?</x-label>
-                <select wire:model='editForm.espcialidadintesada' id="editForm.espcialidadintesada"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                    <option value="null" >Elija una opcion</option>
-                    <option value="SI" >SI</option>
-                    <option value="NO" >NO</option>
-                </select>
-                <x-input-error for="editForm.espcialidadintesada" />
-            </div>
-            <div>
-                <x-label for="editForm.observaciones2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Observaciones</x-label>
-                <textarea wire:model='editForm.observaciones2' id="editForm.observaciones2" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
-                <x-input-error for="editForm.observaciones2" />
             </div>
         </div>
     </form>

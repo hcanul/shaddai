@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('expedientes', function (Blueprint $table) {
             $table->id();
-//            generales
+// generales
             $table->string('name', 100);
             $table->string('apaterno', 100);
             $table->string('amaterno', 100);
@@ -34,15 +34,16 @@ return new class extends Migration
             $table->string('municipio', 100);
             $table->string('telefono', 10);
             $table->enum('vulnerable', ['NINGUNO', 'DISCAPACIDAD', 'INDIGENA', 'ADULTO MAYOR', 'MADRE ASIT. SOCIAL', 'MIGRANTE', ]);
-//            estructura familiar
+// estructura familiar
             $table->integer('vivecasa')->nullable();
             $table->integer('trabajan')->nullable();
             $table->integer('estudian')->nullable();
-//            situacion economica
+// situacion economica
             $table->enum('trabajaactual',['SI', 'NO'])->nullable();
             $table->integer('depeneconomicos')->nullable();
             $table->enum('segsoci', ['NINGUNO', 'ISSTE', 'IMSS', 'INSABI'])->nullable();
             $table->enum('apoyogob', [
+                'NINGUNO',
                 'Programas de bienestar',
                 'Programa para el Bienestar de las Personas Adultas Mayores',
                 'Programa Pensión para el Bienestar de las Personas con Discapacidad',
@@ -55,7 +56,7 @@ return new class extends Migration
                 'Programa Becas de apoyo a la Educación Básica de Madres Jóvenes y Jóvenes Embarazadas (PROMAJOVEN)',
                 'Programa Educativo Rural',
                 ])->nullable();
-//            antecedentes medicos
+// antecedentes medicos
             $table->enum('tuberculosis', ['SI', 'NO'])->nullable();
             $table->enum('dm', ['SI', 'NO'])->nullable();
             $table->enum('hta', ['SI', 'NO'])->nullable();
@@ -84,8 +85,7 @@ return new class extends Migration
             $table->enum('perdiconocimiento', ['SI', 'NO'])->nullable();
             $table->enum('transfusiones', ['SI', 'NO'])->nullable();
             $table->enum('intolmedicamentos', ['SI', 'NO'])->nullable();
-//            Personales no patologicas
-
+//Personales no patologicas
             $table->enum('tiposangre', ['A Rh+', 'A Rh-', 'B Rh+', 'B Rh-', 'AB Rh+', 'AB Rh-', 'O Rh+', 'O Rh-'])->nullable();
             $table->string('alergias', 100)->nullable();
             $table->integer('banio')->nullable();
@@ -94,24 +94,6 @@ return new class extends Migration
             $table->enum('alcoholismo', ['SI', 'NO'])->nullable();
             $table->enum('toxicomanias', ['SI', 'NO'])->nullable();
             $table->string('deportes', 100)->nullable();
-//            notas evolucion
-            $table->float('peso')->nullable();
-            $table->float('talla')->nullable();
-            $table->integer('fc')->nullable();
-            $table->integer('fr')->nullable();
-            $table->float('temp')->nullable();
-            $table->integer('ca')->nullable();
-            $table->integer('so2')->nullable();
-            $table->string('ta', 100)->nullable();
-            $table->float('imc')->nullable();
-            $table->text('observaciones')->nullable();
-            $table->text('tx')->nullable();
-            $table->text('dx')->nullable();
-//            Situacion espiritua
-            $table->enum('permitiooracion', ['SI', 'NO'])->nullable();
-            $table->enum('interesoracion', ['SI', 'NO'])->nullable();
-            $table->string('espcialidadintesada', 100)->nullable();
-            $table->text('observaciones2')->nullable();
             $table->timestamps();
         });
     }

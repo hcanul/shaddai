@@ -45,7 +45,7 @@
             </div>
             <div>
                 <x-label for="createForm.curp" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">C. U. R. P.</x-label>
-                <x-input type="text" wire:model='createForm.curp' id="createForm.curp" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  />
+                <x-input type="text" wire:model.live='createForm.curp' id="createForm.curp" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"  />
                 <x-input-error for="createForm.curp" />
             </div>
             <div>
@@ -539,105 +539,11 @@
                 <x-input-error for="createForm.deportes" />
             </div>
         </div>
-        <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800" id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
-                <li class="me-2">
-                    <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="true" class="inline-block p-4 text-blue-600 rounded-ss-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">IV.- NOTE DE EVOLUCIÓN</button>
-                </li>
-            </ul>
-        </div>
-        <div class="grid grid-cols-4 gap-2 pl-6 sm:grid-cols-4">
-            <div>
-                <x-label for="createForm.peso" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Peso</x-label>
-                <x-input type="number" wire:model='createForm.peso' id="createForm.peso" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="createForm.peso" />
-            </div>
-            <div>
-                <x-label for="createForm.talla" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Talla</x-label>
-                <x-input type="number" wire:model='createForm.talla' id="createForm.talla" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="createForm.talla" />
-            </div>
-            <div>
-                <x-label for="createForm.fr" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">FC</x-label>
-                <x-input type="number" wire:model='createForm.fr' id="createForm.fr" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="createForm.fr" />
-            </div>
-            <div>
-                <x-label for="createForm.talla" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">FR</x-label>
-                <x-input type="number" wire:model='createForm.talla' id="createForm.talla" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="createForm.talla" />
-            </div>
-            <div>
-                <x-label for="createForm.temp" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Temperatura</x-label>
-                <x-input type="number" wire:model='createForm.temp' id="createForm.temp" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="createForm.temp" />
-            </div>
-            <div>
-                <x-label for="createForm.ca" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">CA</x-label>
-                <x-input type="number" wire:model='createForm.ca' id="createForm.ca" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="createForm.ca" />
-            </div>
-            <div>
-                <x-label for="createForm.so2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">SO2</x-label>
-                <x-input type="number" wire:model='createForm.so2' id="createForm.so2" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="createForm.so2" />
-            </div>
-            <div>
-                <x-label for="createForm.ta" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">TA</x-label>
-                <x-input type="text" wire:model='createForm.ta' id="createForm.ta" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="createForm.ta" />
-            </div>
-            <div>
-                <x-label for="createForm.imc" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">IMC</x-label>
-                <x-input type="number" wire:model='createForm.imc' id="createForm.imc" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                <x-input-error for="createForm.imc" />
-            </div>
+        <div class="grid grid-cols-1 gap-2 pl-6 sm:grid-cols-1">
             <div>
                 <x-label for="createForm.observaciones" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Observaciones</x-label>
                 <textarea wire:model='createForm.observaciones' id="createForm.observaciones" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
                 <x-input-error for="createForm.observaciones" />
-            </div>
-            <div>
-                <x-label for="createForm.tx" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">TX</x-label>
-                <textarea wire:model='createForm.tx' id="createForm.tx" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
-                <x-input-error for="createForm.tx" />
-            </div>
-            <div>
-                <x-label for="createForm.dx" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">DX</x-label>
-                <textarea wire:model='createForm.dx' id="createForm.dx" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
-                <x-input-error for="createForm.dx" />
-            </div>
-            <div>
-                <x-label for="createForm.permitiooracion" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Permimtio oración?</x-label>
-                <select wire:model='createForm.permitiooracion' id="createForm.permitiooracion"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                    <option value="null" >Elija una opcion</option>
-                    <option value="SI" >SI</option>
-                    <option value="NO" >NO</option>
-                </select>
-                <x-input-error for="createForm.permitiooracion" />
-            </div>
-            <div>
-                <x-label for="createForm.interesoracion" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Mostro interes en visita o lista oracion?</x-label>
-                <select wire:model='createForm.interesoracion' id="createForm.interesoracion"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                    <option value="null" >Elija una opcion</option>
-                    <option value="SI" >SI</option>
-                    <option value="NO" >NO</option>
-                </select>
-                <x-input-error for="createForm.interesoracion" />
-            </div>
-            <div>
-                <x-label for="createForm.espcialidadintesada" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Especialidad por la que mostro mayor interes?</x-label>
-                <select wire:model='createForm.espcialidadintesada' id="createForm.espcialidadintesada"  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                    <option value="null" >Elija una opcion</option>
-                    <option value="SI" >SI</option>
-                    <option value="NO" >NO</option>
-                </select>
-                <x-input-error for="createForm.espcialidadintesada" />
-            </div>
-            <div>
-                <x-label for="createForm.observaciones2" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Observaciones</x-label>
-                <textarea wire:model='createForm.observaciones2' id="createForm.observaciones2" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
-                <x-input-error for="createForm.observaciones2" />
             </div>
         </div>
     </form>

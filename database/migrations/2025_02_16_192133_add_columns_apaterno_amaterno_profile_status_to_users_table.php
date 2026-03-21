@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::table('users', function (Blueprint $table) {
             $table->string('apaterno', 50)->after('name');
             $table->string('amaterno', 50)->after('apaterno');
-            $table->enum('profile', ['SuperAdmin', 'SuperUser', 'Registro', 'Enfermeria', 'Medico', 'Almacen'])->after('profile_photo_path');
+            $table->enum('profile', ['SuperAdmin', 'SuperUser', 'Registro', 'Enfermeria', 'Medico General', 'Nutricion', 'Fisioterapia', 'Dentista', 'Almacen'])->after('profile_photo_path');
             $table->enum('status', ['ACTIVO', 'INACTIVO'])->default('ACTIVO')->after('profile');
         });
     }

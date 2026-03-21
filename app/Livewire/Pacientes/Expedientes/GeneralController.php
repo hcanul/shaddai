@@ -25,9 +25,9 @@ class GeneralController extends Component
 
     public $pagination = 10;
 
-    public $columns = [ 'name' => 'NOMBRE', 'apaterno' => 'APELLIDO PATERNO', 'amaterno'=>'APELLIDO MATERNO', 'curp'=>'CURP', 'colony'=>'COMUNIDAD O CIUDAD'];
+    public $columns = [ 'name' => 'NOMBRE', 'apaterno' => 'APELLIDO PATERNO', 'amaterno'=>'APELLIDO MATERNO', 'curp'=>'CURP', 'town'=>'COMUNIDAD O CIUDAD'];
 
-    public $displayColumns = [ 'name', 'apaterno', 'amaterno', 'curp', 'colony' ];
+    public $displayColumns = [ 'name', 'apaterno', 'amaterno', 'curp', 'town' ];
 
     public $headers = [ 'NOMBRE', 'APELLIDO PATERNO', 'APELLIDO MATERNO', 'CURP', 'COMUNIDAD O CIUDAD' ];
 

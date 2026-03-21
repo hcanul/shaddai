@@ -4,12 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Expediente extends Model
 {
     protected $table = 'expedientes';
 
-    protected $fillable = [ 'name', 'apaterno', 'amaterno', 'edad', 'sexo', 'fnacimiento', 'curp', 'nacionalidad', 'ecivil', 'estudios', 'ocupacion', 'religion', 'street', 'number', 'cp', 'colony', 'town', 'municipio', 'telefono', 'vulnerable', 'vivecasa', 'trabajan', 'estudian', 'trabajaactual', 'depeneconomicos', 'segsoci', 'apoyogob', 'tuberculosis', 'dm', 'hta', 'enfneoplasticas', 'cardiopatia', 'hepatopatias', 'nefropatias', 'enfendocrinas', 'enfmentales', 'asma', 'enfhematologicas', 'enfinfeccinfanc', 'tb', 'enfvenereas', 'fiebre', 'tifoidea', 'salmonelosis', 'neumonias', 'paludismo', 'parasitosis', 'enfalergicas', 'intervenciones', 'qx', 'hospitalizacion', 'traumatismos', 'perdiconocimiento', 'transfusiones', 'intolmedicamentos', 'tiposangre', 'alergias', 'banio', 'lavdientes', 'tabaquismos', 'alcoholismo', 'toxicomanias', 'deportes', 'peso', 'talla', 'fc', 'fr', 'temp', 'ca', 'so2', 'ta', 'imc', 'observaciones', 'tx', 'dx', 'permitiooracion', 'interesoracion', 'espcialidadintesada', 'observaciones2' ];
+    protected $fillable = [ 'name', 'apaterno', 'amaterno', 'edad', 'sexo', 'fnacimiento', 'curp', 'nacionalidad', 'ecivil', 'estudios', 'ocupacion', 'religion', 'street', 'number', 'cp', 'colony', 'town', 'municipio', 'telefono', 'vulnerable', 'vivecasa', 'trabajan', 'estudian', 'trabajaactual', 'depeneconomicos', 'segsoci', 'apoyogob', 'tuberculosis', 'dm', 'hta', 'enfneoplasticas', 'cardiopatia', 'hepatopatias', 'nefropatias', 'enfendocrinas', 'enfmentales', 'asma', 'enfhematologicas', 'enfinfeccinfanc', 'tb', 'enfvenereas', 'fiebre', 'tifoidea', 'salmonelosis', 'neumonias', 'paludismo', 'parasitosis', 'enfalergicas', 'intervenciones', 'qx', 'hospitalizacion', 'traumatismos', 'perdiconocimiento', 'transfusiones', 'intolmedicamentos', 'tiposangre', 'alergias', 'banio', 'lavdientes', 'tabaquismos', 'alcoholismo', 'toxicomanias', 'deportes' ];
 
     protected function name(): Attribute
     {
@@ -65,5 +66,10 @@ class Expediente extends Model
                 return ucfirst($value);
             }
         );
+    }
+
+    public function consultations(): HasMany
+    {
+        return $this->hasMany(Consultation::class);
     }
 }

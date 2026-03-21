@@ -149,37 +149,8 @@ class EditExpedienteForm extends Form
 
     public $deportes;
 
-    public $peso;
-
-    public $talla;
-
-    public $fc;
-
-    public $fr;
-
-    public $temp;
-
-    public $ca;
-
-    public $so2;
-
-    public $ta;
-
-    public $imc;
-
     public $observaciones;
 
-    public $tx;
-
-    public $dx;
-
-    public $permitiooracion;
-
-    public $interesoracion;
-
-    public $espcialidadintesada;
-
-    public $observaciones2;
 
     public function loadData($id)
     {
@@ -248,22 +219,7 @@ class EditExpedienteForm extends Form
         $this->alcoholismo = $expediente->alcoholismo;
         $this->toxicomanias = $expediente->toxicomanias;
         $this->deportes = $expediente->deportes;
-        $this->peso = $expediente->peso;
-        $this->talla = $expediente->talla;
-        $this->fc = $expediente->fc;
-        $this->fr = $expediente->fr;
-        $this->temp = $expediente->temp;
-        $this->ca = $expediente->ca;
-        $this->so2 = $expediente->so2;
-        $this->ta = $expediente->ta;
-        $this->imc = $expediente->imc;
         $this->observaciones = $expediente->observaciones;
-        $this->tx = $expediente->tx;
-        $this->dx = $expediente->dx;
-        $this->permitiooracion = $expediente->permitiooracion;
-        $this->interesoracion = $expediente->interesoracion;
-        $this->espcialidadintesada = $expediente->espcialidadintesada;
-        $this->observaciones2 = $expediente->observaciones2;
     }
 
     public function setData($id)
@@ -336,22 +292,7 @@ class EditExpedienteForm extends Form
             'alcoholismo',
             'toxicomanias',
             'deportes',
-            'peso',
-            'talla',
-            'fc',
-            'fr',
-            'temp',
-            'ca',
-            'so2',
-            'ta',
-            'imc',
             'observaciones',
-            'tx',
-            'dx',
-            'permitiooracion',
-            'interesoracion',
-            'espcialidadintesada',
-            'observaciones2',
                 ]));
     }
 
@@ -422,21 +363,7 @@ class EditExpedienteForm extends Form
             'alcoholismo',
             'toxicomanias',
             'deportes',
-            'peso',
-            'talla',
-            'fc',
-            'fr',
-            'temp',
-            'ca',
-            'so2',
-            'ta',
-            'imc',
             'observaciones',
-            'tx',
-            'dx',
-            'permitiooracion',
-            'interesoracion',
-            'espcialidadintesada',
-            'observaciones2']);
+            ]);
     }
 }
